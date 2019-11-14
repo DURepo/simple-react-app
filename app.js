@@ -15,19 +15,19 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-// const connection = mysql.createConnection({
-//   host:'lolyz0ok3stvj6f0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-//   user:'yvawm7c4pfodpjsv',
-//   password:'yv3cxxnhbd74m1j1',
-//   database: 'wvygw1nw57w9uwdm'
-//   });
+const connection = mysql.createConnection({
+  host:'lolyz0ok3stvj6f0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user:'yvawm7c4pfodpjsv',
+  password:'yv3cxxnhbd74m1j1',
+  database: 'wvygw1nw57w9uwdm'
+  });
 
-  const connection = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'kec123!',
-    database: 'sample-react-sql-db'
-    });
+  // const connection = mysql.createConnection({
+  //   host:'localhost',
+  //   user:'root',
+  //   password:'kec123!',
+  //   database: 'sample-react-sql-db'
+  //   });
 
 connection.connect(function(err){
   (err)? console.log(err+'+++++++++++++++//////////'): console.log('connection********');
