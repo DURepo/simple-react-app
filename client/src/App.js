@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   getUsers = _ => {
-        axios.get('http://localhost:3001/')
+        axios.get('/users')
     .then((data) => {
       console.log(data.data.users);
       console.log('DATA')
